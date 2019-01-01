@@ -274,3 +274,10 @@ header .project-btn:hover{ -webkit-transform: translateY(-4px); transform: trans
 
 .backtop{text-align: center; padding: 0px 0; background:#28023D ; color: #FFFFFF;}
 
+
+/* ---------------------------------
+12. MY PROJECTS
+--------------------------------- */
+
+.projects-link{text-align: center; padding: 0px 0; background:#31024a ; color: #FFFFFF;}
+
