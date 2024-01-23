@@ -161,9 +161,17 @@
 		<!--================My Tabs Area =================-->
         <section class="mytabs_area p_120">
         	<div class="container">
-        		<div class="row tabs_inner tab-content">
+        		<div class="tabs_inner">
+					<ul class="nav nav-tabs" id="myTab" role="tablist">
+						<li class="nav-item">
+							<a class="nav-link active" id="home-tab" data-toggle="tab" href="#home" role="tab" aria-controls="home" aria-selected="true">My Experiences</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" id="profile-tab" data-toggle="tab" href="#profile" role="tab" aria-controls="profile" aria-selected="false">My Education</a>
+						</li>
+					</ul>
 					<div class="tab-content" id="myTabContent">
-						<div class="tab-pane fade show active col-lg-6" id="home" role="tabpanel" aria-labelledby="home-tab">
+						<div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
 							<ul class="list">
 								<li>
 									<span></span>
@@ -190,10 +198,10 @@
 									</div>
 								</li>
 								<li>
-									<span></span>
+								<span></span>
 									<div class="media">
 										<div class="d-flex">
-											<p>Jun 2019 - Aug 2019</p>
+											<p>Jun 2019 - Dec 2019</p>
 										</div>
 										<div class="media-body">
 											<h4>Sodexo</h4>
@@ -203,7 +211,7 @@
 								</li>
 							</ul>
 						</div>
-						<div class="tab-pane fade show active col-lg-6" id="profile" role="tabpanel" aria-labelledby="profile-tab">
+						<div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">
 							<ul class="list">
 								<li>
 									<span></span>
@@ -219,7 +227,7 @@
 									</div>
 								</li>
 								<li>
-									<span></span>
+								<span></span>
 									<div class="media">
 										<div class="d-flex">
 											<p>Aug 2014 - Jun 2018</p>
