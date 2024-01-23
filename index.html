@@ -42,7 +42,7 @@
         
         <!--================Home Banner Area =================-->
         <section class="home_banner_area">
-           	<div class="container box_1620" style="top: 100px;">
+           	<div class="container box_1620" style="top: 80px;">
            		<div class="banner_inner d-flex align-items-center">
 					<div class="banner_content">
 						<div class="media">
@@ -55,7 +55,7 @@
 									<h3>ABHISHEK BHAVE</h3>
 									<h4>Software Engineer 3 <br> Juniper Networks</h4>
 									<p style="margin-bottom: 10px;">Looking for interesting opportunities in the field of Software Development and Machine Learning.</p>
-									<div class="more_btn" style="margin-bottom: 30px; margin-top: 11px; text-align: left;">
+									<div class="more_btn" style="margin-bottom: 20px; margin-top: 0px; text-align: left;">
 										<a class="main_btn" href="#project_section"> My Portfolio </a>
 										<a class="main_btn" href="resume.pdf"> My Resume </a>
 									</div>
@@ -79,7 +79,7 @@
         <!--================End Home Banner Area =================-->
         
         <!--================Welcome Area =================-->
-        <section class="welcome_area p_120" style="padding-top: 10px;">
+        <section class="welcome_area p_60">
         	<div class="container">
         		<div class="row welcome_inner">
         			<div class="col-lg-6">
@@ -157,12 +157,13 @@
         </section>
         <!--================End Welcome Area =================-->
         
-        <!--================My Tabs Area =================-->
+        
+		<!--================My Tabs Area =================-->
         <section class="mytabs_area p_120">
         	<div class="container">
-        		<div class="tabs_inner">
+        		<div class="row tabs_inner tab-content">
 					<div class="tab-content" id="myTabContent">
-						<div class="tab-pane col-lg-6" id="home" role="tabpanel" aria-labelledby="home-tab">
+						<div class="tab-pane fade show active col-lg-6" id="home" role="tabpanel" aria-labelledby="home-tab">
 							<ul class="list">
 								<li>
 									<span></span>
@@ -229,9 +230,6 @@
 										</div>
 									</div>
 								</li>
-								<li>
-									
-								</li>
 							</ul>
 						</div>
 					</div>
@@ -239,12 +237,194 @@
         	</div>
         </section>
         <!--================End My Tabs Area =================-->
-        
-        <!--================Feature Area =================-->
+
+
+        <!--================Home Gallery Area =================-->
+        <section id="project_section" class="home_gallery_area" style="margin-top: 30px;">
+        	<div class="container">
+				<div class="main_title">
+        			<h2>My Projects</h2>
+        		</div>
+        		<div class="isotope_fillter">
+        			<ul class="gallery_filter list">
+						<li class="active" data-filter="*"><a href="#">All</a></li>
+						<li data-filter=".mern_stack"><a href="#">MERN Stack</a></li>
+						<li data-filter=".distributed_system"><a href="#">Distributed Systems</a></li>
+						<li data-filter=".adv_machine_learning"><a href="#">Advanced Machine Learning</a></li>
+						<li data-filter=".full_stack"><a href="#">Full Stack</a></li>
+						<li data-filter=".big_data"><a href="#">Big Data</a></li>
+					</ul>
+        		</div>
+        	</div>
+        	<div class="container">
+        		<div class="gallery_f_inner row imageGallery1">
+        			<div class="col-lg-4 col-md-4 col-sm-6 distributed_system">
+        				<div class="h_gallery_item">
+        					<div class="g_img_item">
+        						<img class="img-fluid" src="img/gallery/project-1.jpg" alt="">
+        						<a class="light" href="img/gallery/project-1.jpg"><img src="img/gallery/icon.png" alt=""></a>
+        					</div>
+        					<div class="g_item_text">
+        						<a href="https://github.com/abhishekbhave26/Distributed-Systems/blob/master/PA4/SimpleDynamo/app/src/main/java/edu/buffalo/cse/cse486586/simpledynamo/SimpleDynamoProvider.java">
+									<h4>Amazon Dynamo DB</h4>
+								</a>
+        						<p>Implemented Amazon's Dynamo DB with features such as partitioning, replication and failure handling with goal to ensure availability and linearizability.
+									The implementation performs concurrent read and writes to the system even under failures.At the same time, reads return the most recent writes.
+								</p>
+        					</div>
+        				</div>
+        			</div>
+        			<div class="col-lg-4 col-md-4 col-sm-6 mern_stack full_stack">
+        				<div class="h_gallery_item">
+        					<div class="g_img_item">
+        						<img class="img-fluid" src="img/gallery/project-2.jpg" alt="">
+        						<a class="light" href="img/gallery/project-2.jpg"><img src="img/gallery/icon.png" alt=""></a>
+        					</div>
+        					<div class="g_item_text">
+        						<a href="https://github.com/abhishekbhave26/Options-Tracker">
+									<h4>Options Trade Calculator and Logger</h4>
+								</a>
+        						<p>MERN stack application that enables users to manage and analyze options trades. Provides a user-friendly and
+									intuituve UI with React.js. Designed a scalable API middleware with error handling and input validation using Node.js, Express.js, MongoDB.
+									Deployed the system on AWS with an Auto scaled EC2 cluster and Load Balancer
+								</p>
+        					</div>
+        				</div>
+        			</div>
+        			<div class="col-lg-4 col-md-4 col-sm-6 adv_machine_learning">
+        				<div class="h_gallery_item">
+        					<div class="g_img_item">
+        						<img class="img-fluid" src="img/gallery/project-3.jpg" alt="">
+        						<a class="light" href="img/gallery/project-3.jpg"><img src="img/gallery/icon.png" alt=""></a>
+        					</div>
+        					<div class="g_item_text">
+								<a href="https://github.com/abhishekbhave26/Advanced-Machine-Learning/blob/master/Image%20to%20Image%20Translation%20using%20cGANs/pix2pix_keras_Open.ipynb">
+        							<h4>Image-to-Image Translation with Conditional Adversarial Networks</h4>
+								</a>
+        						<p>Developed a conditional adversarial network system employing GANs and cGANs.
+									Goal was to create a model capable of image-to-image translation by learning a structured loss function and
+									simultaneously training a generative model to minimize the loss using Python and deep learning libraries such as TensorFlow and Keras.
+								</p>
+        					</div>
+        				</div>
+        			</div>
+        			<div class="col-lg-4 col-md-4 col-sm-6 full_stack">
+        				<div class="h_gallery_item">
+        					<div class="g_img_item">
+        						<img class="img-fluid" src="img/gallery/project-4.jpg" alt="">
+        						<a class="light" href="img/gallery/project-4.jpg"><img src="img/gallery/icon.png" alt=""></a>
+        					</div>
+        					<div class="g_item_text">
+        						<a href="https://github.com/abhishekbhave26/JavaScript-Shopping-Cart">
+									<h4>Dynamic JavaScript Shopping Cart</h4>
+								</a>
+        						<p>A responsive and interactive web application component
+									that leverages JavaScript to enable real-time updates and seamless user 
+									interactions for managing and displaying items in an online shopping cart.
+								</p>
+        					</div>
+        				</div>
+        			</div>
+        			<div class="col-lg-4 col-md-4 col-sm-6 big_data">
+        				<div class="h_gallery_item">
+        					<div class="g_img_item">
+        						<img class="img-fluid" src="img/gallery/project-5.jpg" alt="">
+        						<a class="light" href="img/gallery/project-5.jpg"><img src="img/gallery/icon.png" alt=""></a>
+        					</div>
+        					<div class="g_item_text">
+								<a href="https://github.com/abhishekbhave26/Data-Intensive-Computing/tree/master/Lab%202">
+        							<h4>Big Data Text Analytics with Hadoop</h4>
+								</a>
+        						<p>Utilizes distributed computing frameworks like Hadoop 
+									to process and analyze large volumes of textual data, extracting 
+									valuable insights, patterns, and information from unstructured text sources.
+								</p>
+        					</div>
+        				</div>
+        			</div>
+        			<div class="col-lg-4 col-md-4 col-sm-6 adv_machine_learning">
+        				<div class="h_gallery_item">
+        					<div class="g_img_item">
+        						<img class="img-fluid" src="img/gallery/project-6.jpg" alt="">
+        						<a class="light" href="img/gallery/project-6.jpg"><img src="img/gallery/icon.png" alt=""></a>
+        					</div>
+        					<div class="g_item_text">
+								<a href="https://github.com/abhishekbhave26/Machine-Learning/tree/master/Digit-Recognition-using-Ensemble-Classifier">
+        							<h4>Digit Recognition using Ensemble Classifier</h4>
+								</a>
+        						<p>A combination of diverse classification algorithms to collectively
+									and accurately predict and categorize digits in digital images, 
+									leveraging the strengths of multiple classifiers to enhance overall 
+									accuracy and robustness in the recognition process.
+								</p>
+        					</div>
+        				</div>
+        			</div>
+        			<div class="col-lg-4 col-md-4 col-sm-6 full_stack">
+        				<div class="h_gallery_item">
+        					<div class="g_img_item">
+        						<img class="img-fluid" src="img/gallery/project-7.jpg" alt="">
+        						<a class="light" href="img/gallery/project-6.jpg"><img src="img/gallery/icon.png" alt=""></a>
+        					</div>
+        					<div class="g_item_text">
+								<a href="https://github.com/abhishekbhave26/fake-news-whatsapp">
+        							<h4>Fake News Detection: Whatsapp</h4>
+								</a>
+        						<p>Development and implementation of strategies, algorithms, to identify and 
+									mitigate the dissemination of misinformation or fake news within the WhatsApp messaging
+									platform, aiming to enhance information integrity and combat the spread of false or misleading content.
+								</p>
+        					</div>
+        				</div>
+        			</div>
+        			<div class="col-lg-4 col-md-4 col-sm-6 full_stack">
+        				<div class="h_gallery_item">
+        					<div class="g_img_item">
+        						<img class="img-fluid" src="img/gallery/project-8.jpg" alt="">
+        						<a class="light" href="img/gallery/project-6.jpg"><img src="img/gallery/icon.png" alt=""></a>
+        					</div>
+        					<div class="g_item_text">
+								<a href="https://github.com/abhishekbhave26/Gamified-Learning-Project/tree/master/Gamified-Learning">
+        							<h4>LearnQuest: Personalized Gamified Education</h4>
+								</a>
+        						<p>Integrates tailored assessments and educational content within 
+									an engaging game-based framework, enhancing individualized learning experiences 
+									and promoting active participation in the educational process.
+								</p>
+        					</div>
+        				</div>
+        			</div>
+        			<div class="col-lg-4 col-md-4 col-sm-6 distributed_system">
+        				<div class="h_gallery_item">
+        					<div class="g_img_item">
+        						<img class="img-fluid" src="img/gallery/project-9.jpg" alt="">
+        						<a class="light" href="img/gallery/project-6.jpg"><img src="img/gallery/icon.png" alt=""></a>
+        					</div>
+        					<div class="g_item_text">
+								<a href="https://github.com/abhishekbhave26/Distributed-Systems/tree/master/PA3">
+        							<h4>CosmicMesh: Peer to Peer Distributed Hash Table</h4>
+								</a>
+        						<p>Designed Chord based DHT in Android platform ,which is commonly used in BitTorrent, using SHA-1 as hashing function.
+									Implemented ID Space Partitioning/ Repartitioning , Ring based Routing and Node Joins in the content provider of the app instance
+								</p>
+        					</div>
+        				</div>
+        			</div>					
+        		</div>
+        	</div>
+			<div class="isotope_fillter">
+			</div>
+        </section>
+		
+		<!--================Feature Area =================-->
         <section id="technical_section" class="feature_area" style="margin-top: 30px;">
         	<div class="container">
         		<div class="main_title">
-        			<h2>Techincal Skillset</h2>
+					<br>
+					<br>
+					<br>
+					<br>
+        			<h2>Technical Skillset</h2>
         			<p> Proven track record in designing and optimizing high-performance software while demonstrating 
 						proficiency in leading development projects, implementing efficient data 
 						processing solutions, and contributing to the success of dynamic teams. 
@@ -260,50 +440,9 @@
         				<div class="feature_item" style = "padding: 13px 17px;">
 							<img class="img-fluid" src="img/gallery/skill-1.jpg" alt="">
         					<a class="light" href="img/gallery/skill-1.jpg"><img src="img/gallery/icon.png" alt=""></a>
-							<br	>
-        					<h4>Programming Languages</h4>
-        					<p>Python, C/C++, Tensorflow, keras, Java, Javascript, Typescript, , HTML/CSS, SQL</p>
-							<br	>
-							<br	>
-        				</div>
-        			</div>
-        			<div class="col-lg-4 col-md-6">
-        				<div class="feature_item" style = "padding: 13px 17px;">
-							<img class="img-fluid" src="img/gallery/skill-2.jpg" alt="">
-        					<a class="light" href="img/gallery/skill-2.jpg"><img src="img/gallery/icon.png" alt=""></a>
-        					<h4>Generative AI</h4>
-        					<p>LLMs, Diffusion Models, GANs, NLP</p>
-							<br	>
-							<br	>
-							<br	>
-        				</div>
-        			</div>
-					<div class="col-lg-4 col-md-6">
-        				<div class="feature_item" style = "padding: 13px 17px;">
-							<img class="img-fluid" src="img/gallery/skill-3.jpg" alt="">
-        					<a class="light" href="img/gallery/project-3.jpg"><img src="img/gallery/icon.png" alt=""></a>
-        					<h4>Advanced Machine Learning, Deep Learning </h4>
-        					<p>Neural Networks, CNNs, RNNs, LSTM, GRU, Supervised, Unsupervised, Reinforcement, Transfer Learning
-							</p>
-        				</div>
-        			</div>
-        		</div>
-				<br	>
-        		<div class="feature_inner row">
-        			<div class="col-lg-4 col-md-6">
-        				<div class="feature_item" style = "padding: 13px 17px;">
-							<img class="img-fluid" src="img/gallery/skill-4.jpg" alt="">
-        					<a class="light" href="img/gallery/skill-4.jpg"><img src="img/gallery/icon.png" alt=""></a>
-        					<h4>Operating Systems</h4>
-        					<p>Mac,Windows XP/7/8/10/11, Linux, Ubuntu</p>
-        				</div>
-        			</div>
-        			<div class="col-lg-4 col-md-6">
-        				<div class="feature_item" style = "padding: 13px 17px;">
-							<img class="img-fluid" src="img/gallery/skill-5.jpg" alt="">
-        					<a class="light" href="img/gallery/skill-5.jpg"><img src="img/gallery/icon.png" alt=""></a>
-        					<h4>Databases </h4>
-        					<p>MySQL, Mongo DB, Oracle Database, MS SQL Server, SQLite, MongoDB, PostrgreSQL, Redis</p>
+							<h4>Programming Languages</h4>
+        					<p>Python, C/C++, Java, Javascript, Typescript, HTML/CSS, SQL, Tensorflow, keras</p>
+							<br>
         				</div>
         			</div>
 					<div class="col-lg-4 col-md-6">
@@ -311,190 +450,57 @@
 							<img class="img-fluid" src="img/gallery/skill-6.jpg" alt="">
         					<a class="light" href="img/gallery/skill-6.jpg"><img src="img/gallery/icon.png" alt=""></a>
         					<h4>Frameworks</h4>
-        					<p>Flask, Django, Node.js, Express.js, MongoDB, React.js, Next.js, React Native, GraphQL, Vue, Angular
-							</p>
+        					<p>Node.js, Express.js, React.js, Next.js, React Native, GraphQL, Angular, Django</p>
+							<br>
         				</div>
         			</div>
-        			<div class="col-lg-4 col-md-6">
+					<div class="col-lg-4 col-md-6">
+        				<div class="feature_item" style = "padding: 13px 17px;">
+							<img class="img-fluid" src="img/gallery/skill-3.jpg" alt="">
+        					<a class="light" href="img/gallery/project-3.jpg"><img src="img/gallery/icon.png" alt=""></a>
+        					<h4>Advanced Machine Learning, Deep Learning, Generative AI </h4>
+        					<p>Neural Networks, CNNs, RNNs, LSTM, GRU, LLMs, GANs, Supervised, Unsupervised</p>
+        				</div>
         			</div>
         		</div>
-				<br	>
-				<div class="feature_inner row">
+				<br>
+        		<div class="feature_inner row">
         			<div class="col-lg-4 col-md-6">
+        				<div class="feature_item" style = "padding: 13px 17px;">
+							<img class="img-fluid" src="img/gallery/skill-5.jpg" alt="">
+        					<a class="light" href="img/gallery/skill-5.jpg"><img src="img/gallery/icon.png" alt=""></a>
+        					<h4>Databases </h4>
+        					<p>MySQL, Mongo DB, MS SQL Server, SQLite, MongoDB, PostrgreSQL, Redis</p>
+							<br>
+							<br>
+        				</div>
+        			</div>
+					<div class="col-lg-4 col-md-6">
         				<div class="feature_item" style = "padding: 13px 17px;">
         					<img class="img-fluid" src="img/gallery/skill-7.jpg" alt="">
         					<a class="light" href="img/gallery/skill-7.jpg"><img src="img/gallery/icon.png" alt=""></a>
         					<h4>Technologies</h4>
-        					<p> Git, Github, RPC, gRPC, ZeroMQ, Apache Kafka, Airflow, Apache Spark, Jenkins, JUnit, Docker, Kubernetes
-							</p>
+        					<p> Git, Github, RPC, gRPC, ZeroMQ, Apache Kafka, Airflow, Apache Spark, Jenkins, JUnit, Docker, Kubernetes, Linux, Ubuntu</p>
+							<br>
         				</div>
         			</div>
-        			<div class="col-lg-4 col-md-6">
+					<div class="col-lg-4 col-md-6">
         				<div class="feature_item" style = "padding: 13px 17px;">
 							<img class="img-fluid" src="img/gallery/skill-8.jpg" alt="">
         					<a class="light" href="img/gallery/skill-8.jpg"><img src="img/gallery/icon.png" alt=""></a>
         					<h4>Other Skills</h4>
         					<p> Frontend, Backend, Full Stack, Distributed Systems, Agile, Messaging Protocols, Unit Testing, Micro-services,
-								CI/CD, SCRUM, Kanban, DevOps
-							</p>
+								CI/CD, SCRUM, Kanban, DevOps </p>
         				</div>
         			</div>
+        			<div class="col-lg-4 col-md-6">
         		</div>
         	</div>
         </section>
         <!--================End Feature Area =================-->
-        
-        <!--================Home Gallery Area =================-->
-        <section id="project_section" class="home_gallery_area" style="margin-top: 30px;">
-        	<div class="container">
-        		<div class="main_title">
-        			<h2>My Projects</h2>
-        			<p>Innovative Ventures of Unveiling a Tapestry of Diverse Projects</p>
-        		</div>
-        		<div class="isotope_fillter">
-        			<ul class="gallery_filter list">
-						<li class="active" data-filter="*"><a href="#">All</a></li>
-						<li data-filter=".brand"><a href="#">MERN Stack</a></li>
-						<li data-filter=".manipul"><a href="#">Distributed Systems</a></li>
-						<li data-filter=".creative"><a href="#">Advanced Machine Learning</a></li>
-						<li data-filter=".design"><a href="#">Full Stack</a></li>
-					</ul>
-        		</div>
-        	</div>
-        	<div class="container">
-        		<div class="gallery_f_inner row imageGallery1">
-        			<div class="col-lg-4 col-md-4 col-sm-6 brand manipul design print">
-        				<div class="h_gallery_item">
-        					<div class="g_img_item">
-        						<img class="img-fluid" src="img/gallery/project-1.jpg" alt="">
-        						<a class="light" href="img/gallery/project-1.jpg"><img src="img/gallery/icon.png" alt=""></a>
-        					</div>
-        					<div class="g_item_text">
-        						<h4>Amazon Dynamo DB</h4>
-        						<p>A NoSQL database service that provides fast and scalable storage with 
-								seamless scalability and low-latency performance.</p>
-        					</div>
-        				</div>
-        			</div>
-        			<div class="col-lg-4 col-md-4 col-sm-6 brand manipul creative">
-        				<div class="h_gallery_item">
-        					<div class="g_img_item">
-        						<img class="img-fluid" src="img/gallery/project-2.jpg" alt="">
-        						<a class="light" href="img/gallery/project-2.jpg"><img src="img/gallery/icon.png" alt=""></a>
-        					</div>
-        					<div class="g_item_text">
-        						<h4>Options Trade Calculator and Logging Tool</h4>
-        						<p>A tool that assists users in analyzing 
-								and tracking options trades, providing calculations for potential gains, 
-								losses, and risk management.</p>
-        					</div>
-        				</div>
-        			</div>
-        			<div class="col-lg-4 col-md-4 col-sm-6 manipul creative design print">
-        				<div class="h_gallery_item">
-        					<div class="g_img_item">
-        						<img class="img-fluid" src="img/gallery/project-3.jpg" alt="">
-        						<a class="light" href="img/gallery/project-3.jpg"><img src="img/gallery/icon.png" alt=""></a>
-        					</div>
-        					<div class="g_item_text">
-        						<h4>Image-to-Image Translation with Conditional Adversarial Networks</h4>
-        						<p>Sophisticated deep learning methods that enables the conversion of images from one style to another
-								while preserving specific conditions, facilitating tasks like changing styles
-								 or transforming day images into night images.</p>
-        					</div>
-        				</div>
-        			</div>
-        			<div class="col-lg-4 col-md-4 col-sm-6 brand creative print">
-        				<div class="h_gallery_item">
-        					<div class="g_img_item">
-        						<img class="img-fluid" src="img/gallery/project-4.jpg" alt="">
-        						<a class="light" href="img/gallery/project-4.jpg"><img src="img/gallery/icon.png" alt=""></a>
-        					</div>
-        					<div class="g_item_text">
-        						<h4>Dynamic JavaScript Shopping Cart</h4>
-        						<p>A responsive and interactive web application component
-								that leverages JavaScript to enable real-time updates and seamless user 
-								interactions for managing and displaying items in an online shopping cart.</p>
-        					</div>
-        				</div>
-        			</div>
-        			<div class="col-lg-4 col-md-4 col-sm-6 brand manipul design">
-        				<div class="h_gallery_item">
-        					<div class="g_img_item">
-        						<img class="img-fluid" src="img/gallery/project-5.jpg" alt="">
-        						<a class="light" href="img/gallery/project-5.jpg"><img src="img/gallery/icon.png" alt=""></a>
-        					</div>
-        					<div class="g_item_text">
-        						<h4>Big Data Text Analytics with Hadoop</h4>
-        						<p>Utilizes distributed computing frameworks like Hadoop 
-								to process and analyze large volumes of textual data, extracting 
-								valuable insights, patterns, and information from unstructured text sources.</p>
-        					</div>
-        				</div>
-        			</div>
-        			<div class="col-lg-4 col-md-4 col-sm-6 brand creative">
-        				<div class="h_gallery_item">
-        					<div class="g_img_item">
-        						<img class="img-fluid" src="img/gallery/project-6.jpg" alt="">
-        						<a class="light" href="img/gallery/project-6.jpg"><img src="img/gallery/icon.png" alt=""></a>
-        					</div>
-        					<div class="g_item_text">
-        						<h4>Digit Recognition using Ensemble Classifier</h4>
-        						<p>A combination of diverse classification algorithms to collectively
-								and accurately predict and categorize digits in digital images, 
-								leveraging the strengths of multiple classifiers to enhance overall 
-								accuracy and robustness in the recognition process.</p>
-        					</div>
-        				</div>
-        			</div>
-        			<div class="col-lg-4 col-md-4 col-sm-6 brand creative">
-        				<div class="h_gallery_item">
-        					<div class="g_img_item">
-        						<img class="img-fluid" src="img/gallery/project-7.jpg" alt="">
-        						<a class="light" href="img/gallery/project-6.jpg"><img src="img/gallery/icon.png" alt=""></a>
-        					</div>
-        					<div class="g_item_text">
-        						<h4>Fake News Detection: Watsapp</h4>
-        						<p>Development and implementation of strategies, algorithms, to identify and 
-								mitigate the dissemination of misinformation or fake news within the WhatsApp messaging
-								platform, aiming to enhance information integrity and combat the spread of false or misleading content.</p>
-        					</div>
-        				</div>
-        			</div>
-        			<div class="col-lg-4 col-md-4 col-sm-6 brand creative">
-        				<div class="h_gallery_item">
-        					<div class="g_img_item">
-        						<img class="img-fluid" src="img/gallery/project-8.jpg" alt="">
-        						<a class="light" href="img/gallery/project-6.jpg"><img src="img/gallery/icon.png" alt=""></a>
-        					</div>
-        					<div class="g_item_text">
-        						<h4>LearnQuest: Personalized Gamified Education</h4>
-        						<p>Integrates tailored assessments and educational content within 
-								an engaging game-based framework, enhancing individualized learning experiences 
-								and promoting active participation in the educational process.</p>
-        					</div>
-        				</div>
-        			</div>
-        			<div class="col-lg-4 col-md-4 col-sm-6 brand creative">
-        				<div class="h_gallery_item">
-        					<div class="g_img_item">
-        						<img class="img-fluid" src="img/gallery/project-9.jpg" alt="">
-        						<a class="light" href="img/gallery/project-6.jpg"><img src="img/gallery/icon.png" alt=""></a>
-        					</div>
-        					<div class="g_item_text">
-        						<h4>CosmicMesh: Peer to Peer Distributed Hash Table</h4>
-        						<p>A decentralized, scalable, and fault-tolerant data structure
-								that enables efficient key-based routing and lookup operations in a 
-								peer-to-peer network, facilitating the distributed storage and retrieval of 
-								information without relying on centralized servers.</p>
-        					</div>
-        				</div>
-        			</div>					
-        		</div>
-        	</div>
-			<div class="isotope_fillter">
-			</div>
-        </section>
+
+		<br>
+		<br>
 
         <!--================Footer Area =================-->
         <footer id="contact_section" class="footer_area p_60">
@@ -504,18 +510,14 @@
         			</div>
         			<div class="col-lg-5 col-sm-6">
         				<aside class="f_widget social_widget">
-        					<div class="f_title" style ="margin-top: 20px; margin-left: 20px; color: aliceblue;" >
+        					<div class="f_title" style ="margin-top: 10px; margin-left: -60px; color: aliceblue;" >
         						<h2>Abhishek Bhave</h2>
-								<br>
-								<h4>Feel free to get in touch through</h4>
-								<ul class="list" style="margin-left: 100px;">
+								<ul class="list" style="margin-left: 70px;">
 									<li><a href="https://www.linkedin.com/in/abhishekbhave26/"><i class="fa fa-linkedin"></i></a></li>
 									<li><a href="mailto:abhishekbhave26@gmail.com"><i class="fa fa-envelope"></i></a></li>
 								</ul>
         					</div>
         				</aside>
-        			</div>
-        			<div class="col-lg-2">
         			</div>
         		</div>
         	</div>
